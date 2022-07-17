@@ -1,0 +1,135 @@
+.navbar{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+}
+
+.navbar .navbar-collapse{
+    flex-grow: 0;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: none;
+    width: 26px;
+    height: 2px;
+    background-color: #f5af00;
+    position: relative;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-light .navbar-toggler{
+    border-color: #f5af00;
+    line-height: 1;
+    padding: .25rem .75rem .6rem;
+}
+
+.navbar-light .navbar-toggler-icon::before,
+.navbar-light .navbar-toggler-icon::after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 2px;
+    background-color: #f5af00;
+}
+
+.navbar-light .navbar-toggler-icon::before{
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-light .navbar-toggler-icon::after{
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#f5af00;
+}
+
+.font-load{
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+.nav-background{
+    background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.change{
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link.change:hover,
+.navbar-light .navbar-nav .nav-link.change.active{
+    color: #f5af00;
+}
+
+@media (max-width:576px) {
+    .navbar{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+
+    .navbar-brand{
+        width: 20%;
+        padding:10px 0;
+        transform: translateY(-5px);
+    }
+
+    .navbar-brand img{
+        width: 100%;
+    }
+
+    .navbar-light .navbar-toggler-icon{
+        width: 19px;
+    }
+
+    .navbar-light .navbar-toggler{
+        line-height: .5;
+        padding: .1rem .3rem .5rem;
+    }
+    
+    .navbar-light .navbar-toggler-icon::before,
+    .navbar-light .navbar-toggler-icon::after{
+        width: 15px;
+    }
+
+    .navbar-light .navbar-toggler-icon::before{
+        top: 5px;
+    }
+    
+    .navbar-light .navbar-toggler-icon::after{
+        top: -5px;
+    }
+}
+
+@media (max-width:991px) {
+    .navbar-nav{
+        background: black;
+        overflow-x: scroll;
+        overflow-y: scroll;
+        padding: 15px 0;
+    }
+
+    .navbar-nav .nav-link{
+        margin-left: 25px;
+    }
+
+    .navbar-light .navbar-nav .nav-link.change{
+        color: white;
+    }
+}

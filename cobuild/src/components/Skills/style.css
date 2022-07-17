@@ -1,0 +1,142 @@
+.skills{
+    padding: 100px 0;
+}
+
+.skills .row{
+    justify-content: space-between;
+}
+
+.skill-info{
+    text-transform: capitalize;
+    font-family: sans-serif;
+    letter-spacing: .6px;
+}
+
+.skill-info h2{
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 2.5rem;
+
+}
+
+.skill-info p{
+    margin-top: 30px;
+    color: #999999;
+}
+
+.target-item{
+    margin-bottom: 40px;
+}
+
+.target-item h4{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Satisfy';
+}
+
+.target-item .target{
+    background-color: #f5af00;
+    height: 5px;
+    border-radius: 2px;
+}
+
+.target-item:nth-child(1) .target{
+    width: 85%;
+}
+
+.target-item:nth-child(2) .target{
+    width: 60%;
+}
+
+.target-item:nth-child(3) .target{
+    width: 70%;
+}
+
+.target-item:nth-child(4) .target{
+    width: 40%;
+}
+
+.skills .com{
+    background-color: #f5af00;
+    padding: 50px 0;
+    margin-top: 75px;
+}
+
+.com .com-content{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+.com-content h3{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.com-content button{
+    border: 1px solid white;
+    outline: none;
+    background-color: unset;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 22px;
+}
+
+.com-content button:hover{
+    background-color: white;
+    color: #f5af00;
+}
+
+@media (max-width:567px) {
+    .skill-info h2{
+        font-size: 2rem;
+    }
+    
+    .skill-info p{
+        font-size: 15px;
+    }
+
+    .skills{
+        padding: 50px 0;
+    }
+}
+
+@media (max-width:767px) {
+    .skill-info p{
+        margin-top: 15px;
+    }
+
+    .skill-info{
+        margin-bottom: 30px;
+    }
+
+    .com .com-content{
+        display:block;
+        text-align: center;
+    }
+
+    .com-content h3{
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .skill-info h2{
+        font-size: 2rem;
+    }
+    
+    .skill-info p{
+        font-size: 15px;
+    }
+
+    .com .com-content{
+        justify-content: space-between;
+    }
+
+    .com-content h3{
+        font-size: 2rem;
+    }
+}

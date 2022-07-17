@@ -1,0 +1,44 @@
+.clients{
+    padding: 100px 0;
+}
+
+.client-say img{
+    border-radius: 50%;
+}
+
+.client-say{
+    text-transform: capitalize;
+    color: #999999;
+    font-family: lora,serif;
+    
+}
+
+.client-say span{
+    text-align: right;
+    width: 70%;
+    display: inline-block;
+}
+
+.client-say:first-child img{
+    width: 75px;
+    height: 75px;
+}
+
+.client-say p{
+    margin-top: 30px;
+}
+
+@media (max-width:767px) {
+    .clients{
+        padding-top: 75px;
+    }
+
+    .client-items .client-say{
+        margin-bottom: 30px;
+    } 
+    
+}
+
+@media (min-width:768px) and (max-width:991px){
+   
+}
